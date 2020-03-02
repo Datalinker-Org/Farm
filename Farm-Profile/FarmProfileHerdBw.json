@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "value": {
+            "@id": "https://www.datalinker.org/context/FarmProfileHerdBw-Value",
+            "@type": "xsd:decimal",
+            "type": "number",
+            "dldescription": "Expresses the extra net farm income per year (per 5 tonnes of dry matter fed) relative to the current genetic base that will be passed on to progeny of the cows in the herd."
+        },
+        "reliability": {
+            "@id": "https://www.datalinker.org/context/FarmProfileHerdBw-Reliability",
+            "@type": "xsd:decimal",
+            "type": "number",
+            "dldescription": "Reliability measures how much information has contributed to the trait evaluation for the animals."
+        },
+        "meta":{
+            "@id": "https://www.datalinker.org/context/ICARObjectMetaData",
+            "@type": "https://www.datalinker.org/contexts/2.0/ICARObjectMetaData",
+            "type": "object",
+            "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
+        }
+    }
+}

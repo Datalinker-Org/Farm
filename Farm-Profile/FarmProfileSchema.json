@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "organisation": {
+            "@id": "http://schema.org/Organization",
+            "@type": "http://schema.org/Organization.jsonld",
+            "type": "object",
+            "dldescription": "Details of the organisation providing data"
+        },
+        "operatingBusinesses": {
+            "@id": "https://www.datalinker.org/context/FarmProfileOperatingBusiness",
+            "@type": "http://www.datalinker.org/contexts/2.0/FarmProfileOperatingBusiness.jsonld",
+            "type": "array",
+            "items": {
+                "type": "object"
+            },
+            "@container": "@set",
+            "dldescription": "Describes the various businesses operating in the farm e.g. Dairy, Forestry"
+        },
+        "business": {
+            "@id": "http://schema.org/Organization",
+            "@type": "http://schema.org/Organization.jsonld",
+            "type": "object",
+            "dldescription": "Provides details of the farm business."
+        },
+        "meta":{
+            "@id": "https://www.datalinker.org/context/ICARObjectMetaData",
+            "@type": "https://www.datalinker.org/contexts/2.0/ICARObjectMetaData",
+            "type": "object",
+            "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
+        }
+    }
+}

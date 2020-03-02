@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "herdMeritName": {
+            "@id": "https://www.datalinker.org/context/FarmProfileHerdMeritValues-HerdMeritName",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "The name of this herd merit value"
+        },
+        "herdMeritValue": {
+            "@id": "https://www.datalinker.org/context/FarmProfileHerdMeritValues-HerdMeritValue",
+            "@type": "xsd:number",
+            "type": "number",
+            "dldescription": "The value of this herd merit value"
+        }
+    }
+}

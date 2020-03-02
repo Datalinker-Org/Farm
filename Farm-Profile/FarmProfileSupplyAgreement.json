@@ -1,0 +1,48 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "id": {
+            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement-Id",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Internal identifier in the source system"
+        },
+        "processor": {
+            "@id": "http://schema.org/Organization",
+            "@type": "http://schema.org/Organization.jsonld",
+            "type": "object",
+            "dldescription": "Details of the processor"
+        },
+        "supplierId": {
+            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement-Name",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Unique identifier of the supplier"
+        },
+        "UNSPSC": {
+            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement-UNSPC",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Describes the product being supplied. Refer to http://www.unspsc.org for more details"
+        },
+        "dateFrom": {
+            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement-DateFrom",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Date from which the supplier agreement starts"
+        },
+        "dateTo": {
+            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement-DateTo",
+            "@type": "xsd:string",
+            "type": "string",
+            "dldescription": "Date on which the supplier agreement ends"
+        },
+        "meta":{
+            "@id": "https://www.datalinker.org/context/ICARObjectMetaData",
+            "@type": "https://www.datalinker.org/contexts/2.0/ICARObjectMetaData",
+            "type": "object",
+            "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
+        }
+    }
+}
