@@ -3,13 +3,13 @@
     "type": "object",
     "properties": {
         "id": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd-Id",
+            "@id": "[Id](#Id)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Internal identifier in the source system"
         },
         "identifiers": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd-Identifiers",
+            "@id": "[Id](#Id)entifiers",
             "@type": "xsd:string",
             "type": "array",
             "items": {
@@ -19,25 +19,25 @@
             "dldescription": "Herd Identifiers using a URN-based identification string containing namespace and unique identifier within the namespace. Used as a unique identifier. Eg. urn:nzl:pri:herd:AgriBase:12345, urn:nzl:pri:herd:FOL_ID:CL:67645"
         },
         "type": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-farmType",
+            "@id": "[farmType](#farmType)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Describes the type of enterprise the animals belong to. Enumeration : Own Stock, Finishing, Contract Grazing"
         },
         "use": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-farmUse",
+            "@id": "[farmUse](#farmUse)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Describes the use of the enterprise the animals belong to. Values can be Stud, Commercial"
         },
         "replacementRate": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-replacementRate",
+            "@id": "[replacementRate](#replacementRate)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "% annual replacement rate in ewe flock or breeding cows"
         },
         "breedAssessed": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd-breedAssessed",
+            "@id": "[breedAssessed](#breedAssessed)",
             "@type": "xsd:string",
             "type": "array",
             "items": {
@@ -47,32 +47,32 @@
             "dldescription": "Description of a genetic package of the Primary Breed. For more details http://www.farmdatastandards.org.nz/animal-breed-list"
         },
         "speciesSimpleName": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd-speciesName",
+            "@id": "[speciesName](#speciesName)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Cattle, Deer, Goats, Sheep"
         },
         "dairyBusinessModel": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd-dairyBusinessModel",
+            "@id": "[dairyBusinessModel](#dairyBusinessModel)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Owner Operated, 50-50 sharemilker, Variable order"
         },
         "calvingSeason": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd-calvingSeason",
+            "@id": "[calvingSeason](#calvingSeason)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Spring,Autumn,Spring and Autumn, Other"
         },
         "peakCowsMilked": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd-peakCowsMilked",
+            "@id": "[peakCowsMilked](#peakCowsMilked)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Peak numbers of cows milked (applicable for Dairy)"
         },
         "avgLiveWts": {
-            "@id": "https://www.datalinker.org/context/avgLiveWts",
-            "@type": "http://www.datalinker.org/contexts/2.0/avgLiveWts.jsonld",
+            "@id": "[avgLiveWts](https://github.com/Datalinker-Org/Animal-Data/blob/master/Merits_Traits_and_Sessions/AvgLiveWts.md)",
+            "@type": "@id",
             "type": "array",
             "items": {
                 "type": "object"
@@ -81,29 +81,29 @@
             "dldescription": "Array of average live weights of the animal according to seasons"
         },
         "herdMeritValues":{
-            "@id": "https://www.datalinker.org/context/FarmProfileHerdMeritValues",
+            "@id": "[FarmProfileHerd](FarmProfileHerd.md)MeritValues",
             "@type": "xsd:array",
             "type": "array",
             "items":{
-                "@type": "https://www.datalinker.org/contexts/2.0/FarmProfileHerdMeritValues.jsonLd",
+                "@type": "@id",
                 "type": "object"
             },
             "dldescription": "Array of merit values for the herd"
         },
         "totalRSU": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd-totalRSU",
+            "@id": "[totalRSU](#totalRSU)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Total revised stock units in this enterprise (having been calculated using the feed requirements of the animal numbers specified for the enterprise)."
         },
         "breedClass": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd-breedClass",
+            "@id": "[breedClass](#breedClass)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Describes the purpose for the identified species : Dual Purpose, Fine Wool, Meat/Terminal, British, European"
         },
         "avgMatureWt": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd-avgMatureWt",
+            "@id": "[avgMatureWt](#avgMatureWt)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Weight of mature breeding stock (cows,hinds,ewes) in kg"

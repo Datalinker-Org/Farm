@@ -1,1 +1,73 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"locations":{"@id":"https://www.datalinker.org/context/Location","type":"xsd:string","@container":"@set","dlcontext":"Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace.Used as an externally meaningful identifier. Eg. urn:nzl:pri:location:FOL_ID:CL-9587-0176"},"identifier":{"@id":"https://www.datalinker.org/context/StockRecFarm#identifier","type":"xsd:string","@container":"@set","dlcontext":"Farm Identifier using a URN-based identification string containing namespace and unique identifier within the namespace. Used as an extremely meaningful identifier. Eg. urn:nzl:pri:farm:AgriBase:12345, urn:nzl:pri:farm:Farmax:67645"},"name":{"@id":"https://www.datalinker.org/context/StockRecFarm#name","@type":"xsd:string","type":"string","dlcontext":"Name of the Farm. Eg. Green Acres Farm"},"type":{"@id":"https://www.datalinker.org/context/StockRecFarm#type","@type":"xsd:string","type":"string","dlcontext":"Describes the type of enterprise the animals belong to. Enumeration : Own Stock, Finishing, Contract Grazing"},"use":{"@id":"https://www.datalinker.org/context/StockRecFarm#use","@type":"xsd:string","type":"string","dlcontext":"Describes the use of the enterprise the animals belong to. Values can be Stud, Commercial"},"owner":{"@id":"https://www.datalinker.org/context/StockRecFarm#owner","@type":"xsd:string","type":"string","dlcontext":"Describes the person who owns the animals and/or the enterprise."},"validFrom":{"@id":"https://www.datalinker.org/context/StockRecFarm#validFrom","@type":"xsd:date","type":"string","dlcontext":"Location start date (optional)."},"validThrough":{"@id":"https://www.datalinker.org/context/StockRecFarm#validThrough","@type":"xsd:date","type":"string","dlcontext":" Location start date (optional)."},"organization":{"@id":"https://www.datalinker.org/context/Organization","@type":"http://www.datalinker.org/contexts/2.0/Organization.jsonld","type":"object","dlcontext":"Organisation that owns or controls the farm"},"contactPoint":{"@id":"https://www.datalinker.org/context/ContactPoint","@type":"http://www.datalinker.org/contexts/2.0/ContactPoint.jsonld","type":"object","@context":"@set","dlcontext":"Contact details of persons responsible for the farm"},"transactions":{"@id":"https://www.datalinker.org/context/Transactions","@type":"http://www.datalinker.org/contexts/2.0/Transactions.jsonld","type":"object","dlcontext":"Provides further information on the types and identifiers for transactions related to stock reconciliation and the details of those transactions."}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "locations": {
+      "@id": "https://www.datalinker.org/context/Location",
+      "type": "xsd:string",
+      "@container": "@set",
+      "dlcontext": "Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace.Used as an externally meaningful identifier. Eg. urn:nzl:pri:location:FOL_ID:CL-9587-0176"
+    },
+    "identifier": {
+      "@id": "https://www.datalinker.org/context/StockRecFarm#identifier",
+      "type": "xsd:string",
+      "@container": "@set",
+      "dlcontext": "Farm Identifier using a URN-based identification string containing namespace and unique identifier within the namespace. Used as an extremely meaningful identifier. Eg. urn:nzl:pri:farm:AgriBase:12345, urn:nzl:pri:farm:Farmax:67645"
+    },
+    "name": {
+      "@id": "https://www.datalinker.org/context/StockRecFarm#name",
+      "@type": "xsd:string",
+      "type": "string",
+      "dlcontext": "Name of the Farm. Eg. Green Acres Farm"
+    },
+    "type": {
+      "@id": "https://www.datalinker.org/context/StockRecFarm#type",
+      "@type": "xsd:string",
+      "type": "string",
+      "dlcontext": "Describes the type of enterprise the animals belong to. Enumeration : Own Stock, Finishing, Contract Grazing"
+    },
+    "use": {
+      "@id": "https://www.datalinker.org/context/StockRecFarm#use",
+      "@type": "xsd:string",
+      "type": "string",
+      "dlcontext": "Describes the use of the enterprise the animals belong to. Values can be Stud, Commercial"
+    },
+    "owner": {
+      "@id": "https://www.datalinker.org/context/StockRecFarm#owner",
+      "@type": "xsd:string",
+      "type": "string",
+      "dlcontext": "Describes the person who owns the animals and/or the enterprise."
+    },
+    "validFrom": {
+      "@id": "https://www.datalinker.org/context/StockRecFarm#validFrom",
+      "@type": "xsd:date",
+      "type": "string",
+      "dlcontext": "Location start date (optional)."
+    },
+    "validThrough": {
+      "@id": "https://www.datalinker.org/context/StockRecFarm#validThrough",
+      "@type": "xsd:date",
+      "type": "string",
+      "dlcontext": " Location start date (optional)."
+    },
+    "organization": {
+      "@id": "https://www.datalinker.org/context/Organization",
+      "@type": "http://www.datalinker.org/contexts/2.0/Organization.jsonld",
+      "type": "object",
+      "dlcontext": "Organisation that owns or controls the farm"
+    },
+    "contactPoint": {
+      "@id": "https://www.datalinker.org/context/ContactPoint",
+      "@type": "http://www.datalinker.org/contexts/2.0/ContactPoint.jsonld",
+      "type": "object",
+      "@context": "@set",
+      "dlcontext": "Contact details of persons responsible for the farm"
+    },
+    "transactions": {
+      "@id": "https://www.datalinker.org/context/Transactions",
+      "@type": "http://www.datalinker.org/contexts/2.0/Transactions.jsonld",
+      "type": "object",
+      "dlcontext": "Provides further information on the types and identifiers for transactions related to stock reconciliation and the details of those transactions."
+    }
+  }
+}

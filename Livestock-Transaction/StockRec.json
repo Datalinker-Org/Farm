@@ -1,1 +1,17 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"farmName":{"@id":"https://www.datalinker.org/context/StockRec#farmName","type":"xsd:string","dlcontext":"Name of the farm eg. Smith Farms Ltd."},"farmUrl":{"@id":"https://www.datalinker.org/context/StockRec#farmUrl","@type":"http://www.datalinker.org/contexts/1.0/StockRecFarm.jsonld","type":"object","dlcontext":"URL to get full farm information"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "farmName": {
+      "@id": "https://www.datalinker.org/context/StockRec#farmName",
+      "type": "xsd:string",
+      "dlcontext": "Name of the farm eg. Smith Farms Ltd."
+    },
+    "farmUrl": {
+      "@id": "https://www.datalinker.org/context/StockRec#farmUrl",
+      "@type": "http://www.datalinker.org/contexts/1.0/StockRecFarm.jsonld",
+      "type": "object",
+      "dlcontext": "URL to get full farm information"
+    }
+  }
+}

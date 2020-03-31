@@ -3,37 +3,37 @@
     "type": "object",
     "properties": {
         "id": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement-Id",
+            "@id": "[Id](#Id)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Internal identifier in the source system"
         },
         "processor": {
             "@id": "http://schema.org/Organization",
-            "@type": "http://schema.org/Organization.jsonld",
+            "@type": "@id",
             "type": "object",
             "dldescription": "Details of the processor"
         },
         "supplierId": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement-Name",
+            "@id": "[Name](#Name)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Unique identifier of the supplier"
         },
         "UNSPSC": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement-UNSPC",
+            "@id": "[UNSPC](#UNSPC)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Describes the product being supplied. Refer to http://www.unspsc.org for more details"
         },
         "dateFrom": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement-DateFrom",
+            "@id": "[DateFrom](#DateFrom)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Date from which the supplier agreement starts"
         },
         "dateTo": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement-DateTo",
+            "@id": "[DateTo](#DateTo)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Date on which the supplier agreement ends"

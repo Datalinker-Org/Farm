@@ -3,13 +3,13 @@
     "type": "object",
     "properties": {
         "value": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerdPw-Value",
+            "@id": "[Value](#Value)",
             "@type": "xsd:decimal",
             "type": "number",
             "dldescription": "Expresses the extra net farm income per year (per 5 tonnes of dry matter fed) relative to the current genetic base that will be produced by cows in this herd during their lifetime."
         },
         "reliability": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerdPw-Reliability",
+            "@id": "[Reliability](#Reliability)",
             "@type": "xsd:decimal",
             "type": "number",
             "dldescription": "Reliability measures how much information has contributed to the trait evaluation for the animals."
