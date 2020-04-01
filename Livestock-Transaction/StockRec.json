@@ -3,15 +3,15 @@
   "type": "object",
   "properties": {
     "farmName": {
-      "@id": "https://www.datalinker.org/context/StockRec#farmName",
-      "type": "xsd:string",
-      "dlcontext": "Name of the farm eg. Smith Farms Ltd."
+      "@id": "[farmName](#farmName)",
+      "@type": "xsd:string",
+      "dldescription": "Name of the farm eg. Smith Farms Ltd."
     },
     "farmUrl": {
-      "@id": "https://www.datalinker.org/context/StockRec#farmUrl",
-      "@type": "http://www.datalinker.org/contexts/1.0/StockRecFarm.jsonld",
+      "@id": "[farmUrl](#farmUrl)",
+      "@type": "@id",
       "type": "object",
-      "dlcontext": "URL to get full farm information"
+      "dldescription": "URL to get full farm information"
     }
   }
 }

@@ -3,46 +3,46 @@
   "type": "object",
   "properties": {
     "category": {
-      "@id": "https://www.datalinker.org/context/Transactions#category",
-      "type": "xsd:string",
-      "dlcontext": "Describes the category of stock reconciliation transaction. Enumerated values are Animals Entering System, Animals Leaving System - Losses, Animals Leaving System - Consumed, Animals Arriving, Animals Departing, Animals Aging, Current Balance"
+      "@id": "[category](#category)",
+      "@type": "xsd:string",
+      "dldescription": "Describes the category of stock reconciliation transaction. Enumerated values are Animals Entering System, Animals Leaving System - Losses, Animals Leaving System - Consumed, Animals Arriving, Animals Departing, Animals Aging, Current Balance"
     },
     "type": {
-      "@id": "https://www.datalinker.org/context/Transactions#type",
-      "type": "xsd:string",
-      "dlcontext": "Describes the sub-type of stock reconciliation transaction. Refer to Stock Reconciliation Data Standard at http://www.farmdatastandards.org.nz"
+      "@id": "[type](#type)",
+      "@type": "xsd:string",
+      "dldescription": "Describes the sub-type of stock reconciliation transaction. Refer to [Stock Reconciliation Data Standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Stock%20Reconciliation/README.md)"
     },
     "txnId": {
-      "@id": "https://www.datalinker.org/context/Transactions#txnId",
+      "@id": "[txnId](#txnId)",
       "@type": "xsd:string",
       "type": "string",
-      "dlcontext": "Holding place Identifier for the transaction in the source system"
+      "dldescription": "Holding place Identifier for the transaction in the source system"
     },
     "dateOfTxn": {
-      "@id": "https://www.datalinker.org/context/Transactions#dateOfTxn",
+      "@id": "[dateOfTxn](#dateOfTxn)",
       "@type": "xsd:date",
       "type": "string",
-      "dlcontext": "ISO 8601 Date; Transaction date, Balance date or Opening date of the transaction period depending on Transaction Category"
+      "dldescription": "ISO 8601 Date; Transaction date, Balance date or Opening date of the transaction period depending on Transaction Category"
     },
     "closingDate": {
-      "@id": "https://www.datalinker.org/context/Transactions#closingDate",
+      "@id": "[closingDate](#closingDate)",
       "@type": "xsd:date",
       "type": "string",
-      "dlcontext": "Closing Date of the transaction period (if relevant)"
+      "dldescription": "Closing Date of the transaction period (if relevant)"
     },
     "otherParty": {
-      "@id": "https://www.datalinker.org/context/Transactions#otherParty",
-      "@type": "http://www.datalinker.org/contexts/1.0/Organization.jsonld",
+      "@id": "[otherParty](#otherParty)",
+      "@type": "@id",
       "type": "array",
       "items": { "type": "object" },
       "@container": "@set",
-      "dlcontext": "Array of organisations"
+      "dldescription": "Array of organisations"
     },
     "trnxItems": {
-      "@id": "https://www.datalinker.org/context/TrnxItems",
-      "@type": "http://www.datalinker.org/contexts/2.0/TrnxItems.jsonld",
+      "@id": "[trnxItems](trnxItems.md)",
+      "@type": "@id",
       "type": "object",
-      "dlcontext": "Array of Transaction Items: Item[], n=1..2"
+      "dldescription": "Array of Transaction Items: Item[], n=1..2"
     }
   }
 }

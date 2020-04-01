@@ -3,80 +3,80 @@
   "type": "object",
   "properties": {
     "transactionId": {
-      "@id": "https://www.datalinker.org/context/Transaction-transactionId",
+      "@id": "[transactionId](#transactionId)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Unique identifier for the transaction in the source system"
     },
     "transactionNumber": {
-      "@id": "https://www.datalinker.org/context/Transaction-farmidentifiera",
+      "@id": "[transactionNumber](#transactionNumber)",
       "@type": "xsd:number",
       "type": "integer",
       "dldescription": "A visual number or identifier for the transaction (typically bounded to farm/enterprise)"
     },
     "transactionDate": {
-      "@id": "https://www.datalinker.org/context/Transaction-transactionDate",
+      "@id": "[transactionDate](#transactionDate)",
       "@type": "xsd:date",
       "type": "string",
       "dldescription": "The date of the transaction"
     },
     "postingDate": {
-      "@id": "https://www.datalinker.org/context/Transaction-postingDate",
+      "@id": "[postingDate](#postingDate)",
       "@type": "xsd:date",
       "type": "string",
       "dldescription": "The date of financial posting (for instance invoice date may be later than the actual sale event)"
     },
     "reference": {
-      "@id": "https://www.datalinker.org/context/Transaction-reference",
+      "@id": "[reference](#reference)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "A reference code such as an invoice number or purchase order number"
     },
     "otherPartyId": {
-      "@id": "https://www.datalinker.org/context/Transaction-otherPartyId",
+      "@id": "[otherPartyId](#otherPartyId)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "An identifier of another party within the source system"
     },
     "otherPartyContact": {
-      "@id": "https://www.datalinker.org/context/Transaction-otherPartyContact",
+      "@id": "[otherPartyContact](#otherPartyContact)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Name, short form contact details of supplier/receiver. Only intended for reference, not e-commerce."
     },
     "createdDate": {
-      "@id": "https://www.datalinker.org/context/Transaction-createdDate",
+      "@id": "[createdDate](#createdDate)",
       "@type": "xsd:date",
       "type": "string",
       "dldescription": "The date in which the transaction was created, with time-zone information if required. May be used for synchronisation."
     },
     "updatedDate": {
-      "@id": "https://www.datalinker.org/context/Transaction-updatedDate",
+      "@id": "[updatedDate](#updatedDate)",
       "@type": "xsd:date",
       "type": "string",
       "dldescription": "The date in which the transaction was updated, with time-zone information if required. May be used for synchronisation."
     },
     "url": {
-      "@id": "https://www.datalinker.org/context/Transaction-url",
+      "@id": "[url](#url)",
       "@type": "xsd:number",
       "type": "integer",
       "dldescription": "Link to a source document if any"
     },
     "subTotal": {
-      "@id": "https://www.datalinker.org/context/Transaction-subTotal",
+      "@id": "[subTotal](#subTotal)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Sub-total of the item line amounts in the transaction"
     },
     "subTotalTax": {
-      "@id": "https://www.datalinker.org/context/Transaction-subTotalTax",
+      "@id": "[subTotal](#subTotal)Tax",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Sub-total of the tax item line amounts in the transaction"
     },
     "transactionLine": {
-      "@id": "https://www.datalinker.org/context/TransactionLine",
-      "@type": "http://www.datalinker.org/contexts/2.0/TransactionLine.jsonld",
+      "@id": "[TransactionLine](#TransactionLine)",
+      "@type": "@id",
       "type": "array",
       "items": { "type": "object" },
       "@container": "@set",

@@ -3,7 +3,7 @@
   "type": "object",
   "properties": {
     "locations": {
-      "@id": "https://www.datalinker.org/context/Financial-locations",
+      "@id": "[locations](#locations)",
       "@type": "xsd:string",
       "type": "array",
       "items": { "type": "string" },
@@ -11,7 +11,7 @@
       "dldescription": "Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace. Used as an externally meaningful identifier. e.g. urn:nzl:pri:location:FOL_ID:CL-9587-0176"
     },
     "farmidentifiers": {
-      "@id": "https://www.datalinker.org/context/Financial-farmidentifiera",
+      "@id": "[farmidentifiera](#farmidentifiera)",
       "@type": "xsd:string",
       "type": "array",
       "items": { "type": "string" },
@@ -19,61 +19,61 @@
       "dldescription": "A code used by the source system to identify the farm, such as an internally meaningful identifier"
     },
     "farmname": {
-      "@id": "https://www.datalinker.org/context/Financial-farmname",
+      "@id": "[farmname](#farmname)",
       "@type": "xsd:string",
       "type": "string",
       "dldescription": "Farm name. e.g. Smith Farms Ltd"
     },
     "validFrom": {
-      "@id": "https://www.datalinker.org/context/PastureCoversFarm-ValidFrom",
+      "@id": "[ValidFrom](https://github.com/Datalinker-Org/Pasture-Management/blob/master/Pasture-Cover/PastureCoversFarm.md)",
       "@type": "xsd:date",
       "type": "string",
       "dldescription": "Location start date. This is an optional field"
     },
     "validThrough": {
-      "@id": "https://www.datalinker.org/context/PastureCoversFarm-ValidThrough",
+      "@id": "[ValidThrough](https://github.com/Datalinker-Org/Pasture-Management/blob/master/Pasture-Cover/PastureCoversFarm.md)",
       "@type": "xsd:date",
       "type": "string",
       "dldescription": "Location end date. This is an optional field"
     },
     "organization": {
-      "@id": "https://www.datalinker.org/context/Financial-Organization",
+      "@id": "[Organization](#Organization)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dltype": "http://www.datalinker.org/context/Organization",
+      "dltype": "[Organization](https://github.com/Datalinker-Org/Shared/blob/master/Organization.md)",
       "dldescription": "The official name or registered name of the organization, e.g. Sheep Improvement Ltd."
     },
     "transactions": {
-      "@id": "https://www.datalinker.org/context/Financial-Transactions",
+      "@id": "[Transactions](#Transactions)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dltype": "http://www.datalinker.org/context/Transaction",
+      "dltype": "[Transaction](Transaction.md)",
       "dldescription": "Link to transactions list of the farm"
     },
     "aggregateTransactions": {
-      "@id": "https://www.datalinker.org/context/Financial-AggregateTransactions",
+      "@id": "[AggregateTransactions](#AggregateTransactions)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dltype": "http://www.datalinker.org/context/AggregateTransaction",
+      "dltype": "[AggregateTransaction](AggregateTransaction.md)",
       "dldescription": "Link to aggregate transactions list of the farm"
     },
     "balanceSheet": {
-      "@id": "https://www.datalinker.org/context/Financial-BalanceSheet",
+      "@id": "[BalanceSheet](#BalanceSheet)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dltype": "http://www.datalinker.org/context/BalanceSheet",
+      "dltype": "[BalanceSheet](BalanceSheet.md)",
       "dldescription": ""
     },
     "KPIs": {
-      "@id": "https://www.datalinker.org/context/Financial-KPIs",
+      "@id": "[KPIs](#KPIs)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dltype": "http://www.datalinker.org/context/KPI",
+      "dltype": "[KPI](https://github.com/Datalinker-Org/Benchmarks/blob/master/Benchmark/KPI.md)",
       "dldescription": ""
     }
   }

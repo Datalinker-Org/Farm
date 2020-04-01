@@ -46,11 +46,11 @@
             "type": "boolean",
             "dldescription": "Indicates whether holding is organic or not."
         },
-        "meta":{
-            "@id": "https://www.datalinker.org/context/ICARObjectMetaData",
-            "@type": "https://www.datalinker.org/contexts/2.0/ICARObjectMetaData",
-            "type": "object",
-            "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
-        }
+      "meta": {
+        "@id": "https://github.com/Datalinker-Org/ICAR-Rezare/ICARObjectMetaData.md",
+        "@type": "@id",
+        "type": "object",
+        "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
+      }
     }
 }

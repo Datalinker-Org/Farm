@@ -3,17 +3,17 @@
   "type": "object",
   "properties": {
     "organization": {
-      "@id": "https://www.datalinker.org/context/FinancialSchema-Organization",
+      "@id": "[Organization](#Organization)",
       "@type": "@id",
       "type": "string",
       "format": "uri",
-      "dltype": "http://www.datalinker.org/context/Organization",
+      "dltype": "[Organization](https://github.com/Datalinker-Org/Shared/blob/master/Organization.md)",
       "dldescription": "The official name or registered name of the organization, e.g. Sheep Improvement Ltd."
     },
     "farms": {
-      "@id": "https://www.datalinker.org/context/Financial",
+      "@id": "[Financial](Financial.md)",
       "@container": "@set",
-      "dltype": "http://www.datalinker.org/context/Financial.jsonld",
+      "dltype": "@id",
       "dldescription": "List of of farms"
     }
   }
