@@ -3,13 +3,13 @@
     "type": "object",
     "properties": {
         "id": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-Id",
+            "@id": "[Id](#Id)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Identifier for the site"
         },
         "identifiers": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-Identifiers",
+            "@id": "[Identifiers](#identifiers)",
             "@type": "xsd:string",
             "type": "array",
             "items": {
@@ -19,109 +19,109 @@
             "dldescription": "Not mandatory. Site identifiers using a URN-based identification string containing namespace and unique identifier within the namespace. Used as unique identifier. Eg. urn:nzl:pri:site:AgriBase:12345, urn:nzl:pri:site:FOL_ID:CL:67645"
         },
         "name": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-Name",
+            "@id": "[Name](#Name)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Name of the site"
         },
         "totalArea": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-totalArea",
+            "@id": "[FarmProfileHolding](FarmProfileHolding.md)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Total site area expressed in m2"
         },
         "effectiveArea": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-effectiveArea",
+            "@id": "[effectiveArea](#effectiveArea)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Site effective area in m2"
         },
         "ungrazeableArea": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-ungrazeableArea",
+            "@id": "[ungrazeableArea](#ungrazeableArea)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Site ungrazeable area in m2"
         },
         "croppingArea": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-croppingArea",
+            "@id": "[croppingArea](#croppingArea)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Area planted in crop. In m2"
         },
         "cultivableArea": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-cultivableArea",
+            "@id": "[FarmProfileHolding](FarmProfileHolding.md)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Effective area of the farm for cultivation (cropping) purposes"
         },
         "ownership": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-blockOwnership",
+            "@id": "[blockOwnership](#blockOwnership)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Values can be 'Owned' or 'Leased'"
         },
         "topography": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-topography",
+            "@id": "[topography](#topography)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Values can be Flat,Rolling,Easy hill, Steep hill"
         },
         "type": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-Type",
+            "@id": "[Type](#Type)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Pasture, Support or Crop"
         },
         "validFrom": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-validFrom",
+            "@id": "[validFrom](#validFrom)",
             "@type": "xsd:date",
             "type": "string",
             "dldescription": "Date started operating for specific paddock type"
         },
         "validTo": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-validTo",
+            "@id": "[validTo](#validTo)",
             "@type": "xsd:date",
             "type": "string",
             "dldescription": "Date ended(ceased) operating for specific paddock type"
         },
         "cloverLevel": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-cloverLevel",
+            "@id": "[cloverLevel](#cloverLevel)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Annual average clover content (as a proportion of pasture dry matter) where fertiliser N inputs are not applied. Enumeration defined by Overseer. Enumeration: Very low, Low, Medium, High, Very high"
         },
         "pastureType": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-pastureType",
+            "@id": "[pastureType](#pastureType)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Enumeration: Ryegrass/white clover, Browntop, Unimproved/tussock grasslands, Summer C4 (paspalum) pastures, C4 (kikuyu) pastures, Lucerne, Grass only (enumeration defined by Overseer)"
         },
         "pastureUtilisation": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-pastureUtilisation",
+            "@id": "[pastureUtilisation](#pastureUtilisation)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Expressed in percentage"
         },
         "pastureSpecies": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-pastureSpecies",
+            "@id": "[pastureSpecies](#pastureSpecies)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Plant species names as defined in http://www.feedipedia.org/content/feeds?category=15965"
         },
         "avgPastureNConc": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-avgPastureNConc",
+            "@id": "[avgPastureNConc](#avgPastureNConc)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Expressed in percentage"
         },
         "roadAddress": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-roadAddress",
+            "@id": "[roadAddress](#roadAddress)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Road address of the block"
         },
         "stockTypes": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-stockTypes",
+            "@id": "[stockTypes](#stockTypes)",
             "@type": "xsd:string",
             "type": "array",
             "items": {
@@ -131,46 +131,46 @@
             "dldescription": "Dairy Cows [Cows], Dairy Replacements [Young Stock], Pigs, Sheep, Beef Cattle [Cattle], Deer"
         },
         "numberOfStock": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-numberOfStock",
+            "@id": "[numberOfStock](#numberOfStock)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Number of animals"
         },
         "dtStockCome": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-dtStockCome",
+            "@id": "[dtStockCome](#dtStockCome)",
             "@type": "xsd:date",
             "type": "string",
             "dldescription": "Date when the animals came in"
         },
         "dtStockLeave": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-dtStockLeave",
+            "@id": "[dtStockLeave](#dtStockLeave)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Date when the animals moved out"
         },
         "areaHayPerSilageHarvested": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-areaHayPerSilageHarvested",
+            "@id": "[areaHayPerSilageHarvested](#areaHayPerSilageHarvested)",
             "@type": "xsd:number",
             "type": "integer",
             "dldescription": "Expressed in m2"
         },
         "destinationHaySilage": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-destinationHaySilage",
+            "@id": "[destinationHaySilage](#destinationHaySilage)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Fed on support block, Milking area or Elsewhere (defined by Overseer)"
         },
         "runoff": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite-runoff",
+            "@id": "[runoff](#runoff)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "True if runoff block"
         },
-        "meta":{
-            "@id": "https://www.datalinker.org/context/ICARObjectMetaData",
-            "@type": "https://www.datalinker.org/contexts/2.0/ICARObjectMetaData",
-            "type": "object",
-            "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
-        }
+      "meta": {
+        "@id": "https://github.com/Datalinker-Org/ICAR-Rezare/ICARObjectMetaData.md",
+        "@type": "@id",
+        "type": "object",
+        "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
+      }
     }
 }

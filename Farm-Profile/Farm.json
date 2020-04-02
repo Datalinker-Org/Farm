@@ -1,1 +1,104 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"locations":{"@id":"https://www.datalinker.org/context/Location","@type":"xsd:string","type":"array","items":{"type":"string"},"@container":"@set","dldescription":"Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace.Used as an externally meaningful identifier. Eg. urn:nzl:pri:location:FOL_ID:CL-9587-0176"},"identifier":{"@id":"https://www.datalinker.org/context/Farm-Identifier","@type":"xsd:string","type":"array","items":{"type":"string"},"@container":"@set","dldescription":"Farm Identifier using a URN-based identification string containing namespace and unique identifier within the namespace. Used as an extremely meaningful identifier. Eg. urn:nzl:pri:farm:AgriBase:12345, urn:nzl:pri:farm:Farmax:67645"},"name":{"@id":"https://www.datalinker.org/context/Farm-Name","@type":"xsd:string","type":"string","dldescription":"Name of the Farm. Eg. Green Acres Farm"},"type":{"@id":"https://www.datalinker.org/context/Farm-farmType","@type":"xsd:string","type":"string","dldescription":"Describes the type of enterprise the animals belong to. Enumeration : Own Stock, Finishing, Contract Grazing"},"use":{"@id":"https://www.datalinker.org/context/Farm-farmUse","@type":"xsd:string","type":"string","dldescription":"Describes the use of the enterprise the animals belong to. Values can be Stud, Commercial"},"totalArea":{"@id":"https://www.datalinker.org/context/Farm-totalArea","@type":"xsd:number","type":"integer","dldescription":"Total farm area expressed in hectares"},"cultivableArea":{"@id":"https://www.datalinker.org/context/Farm-cultivableArea","@type":"xsd:number","type":"integer","dldescription":"Effective area of the farm for cultivation (cropping) purposes"},"subtype":{"@id":"https://www.datalinker.org/context/Farm-farmSystemSubtype","@type":"xsd:string","type":"string","dldescription":" DairyNZ farm system number, B+LNZ farm class"},"topography":{"@id":"https://www.datalinker.org/context/Farm-topography","@type":"xsd:string","type":"string","dldescription":"Rolling, Easy hill, Steep hill (this enumeration is defined by Overseer). Can be different for other systems"},"organization":{"@id":"https://www.datalinker.org/context/Organization","@type":"http://www.datalinker.org/contexts/2.0/Organization.jsonld","type":"object","dldescription":"Organisation that owns or controls the farm"},"customerName":{"@id":"https://www.datalinker.org/context/Farm-customerName","@type":"xsd:string","type":"string","dldescription":"Name of Dairy or Meat Processor"},"supplyType":{"@id":"https://www.datalinker.org/context/Farm-supplyType","@type":"xsd:string","type":"string","dldescription":"Milk, Meat,Fibre or Other"},"farmBlocks":{"@id":"https://www.datalinker.org/context/FarmBlocks","@type":"http://www.datalinker.org/contexts/2.0/FarmBlocks.jsonld","type":"array","items":{"type":"object"},"@container":"@set","dldescription":"Array of blocks in the farm"},"farmEnterprise":{"@id":"https://www.datalinker.org/context/FarmEnterprise","@type":"http://www.datalinker.org/contexts/2.0/FarmEnterprise.jsonld","type":"array","items":{"type":"object"},"@container":"@set","dldescription":"Array of enterprises on the farm"},"replacementRate":{"@id":"https://www.datalinker.org/context/Farm-replacementRate","@type":"xsd:number","type":"integer","dldescription":"% annual replacement rate in ewe flock or breeding cows"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "locations": {
+      "@id": "[Location](#Location)",
+      "@type": "xsd:string",
+      "type": "array",
+      "items": { "type": "string" },
+      "@container": "@set",
+      "dldescription": "Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace.Used as an externally meaningful identifier. Eg. urn:nzl:pri:location:FOL_ID:CL-9587-0176"
+    },
+    "identifier": {
+      "@id": "[Identifier](#Identifier)",
+      "@type": "xsd:string",
+      "type": "array",
+      "items": { "type": "string" },
+      "@container": "@set",
+      "dldescription": "Farm Identifier using a URN-based identification string containing namespace and unique identifier within the namespace. Used as an extremely meaningful identifier. Eg. urn:nzl:pri:farm:AgriBase:12345, urn:nzl:pri:farm:Farmax:67645"
+    },
+    "name": {
+      "@id": "[Name](#Name)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Name of the Farm. Eg. Green Acres Farm"
+    },
+    "type": {
+      "@id": "[farmType](#farmType)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Describes the type of enterprise the animals belong to. Enumeration : Own Stock, Finishing, Contract Grazing"
+    },
+    "use": {
+      "@id": "[farmUse](#farmUse)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Describes the use of the enterprise the animals belong to. Values can be Stud, Commercial"
+    },
+    "totalArea": {
+      "@id": "[totalArea](#totalArea)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Total farm area expressed in hectares"
+    },
+    "cultivableArea": {
+      "@id": "[cultivableArea](#cultivableArea)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Effective area of the farm for cultivation (cropping) purposes"
+    },
+    "subtype": {
+      "@id": "[farmSystemSubtype](#farmSystemSubtype)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": " DairyNZ farm system number, B+LNZ farm class"
+    },
+    "topography": {
+      "@id": "[topography](#topography)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Rolling, Easy hill, Steep hill (this enumeration is defined by Overseer). Can be different for other systems"
+    },
+    "organization": {
+      "@id": "[Organization](https://github.com/Datalinker-Org/Shared/blob/master/Organization.md)",
+      "@type": "@id",
+      "type": "object",
+      "dldescription": "Organisation that owns or controls the farm"
+    },
+    "customerName": {
+      "@id": "[customerName](#customerName)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Name of Dairy or Meat Processor"
+    },
+    "supplyType": {
+      "@id": "[supplyType](#supplyType)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Milk, Meat,Fibre or Other"
+    },
+    "farmBlocks": {
+      "@id": "[FarmBlocks](FarmBlocks.md)",
+      "@type": "@id",
+      "type": "array",
+      "items": { "type": "object" },
+      "@container": "@set",
+      "dldescription": "Array of blocks in the farm"
+    },
+    "farmEnterprise": {
+      "@id": "[FarmEnterprise](FarmEnterprise.md)",
+      "@type": "@id",
+      "type": "array",
+      "items": { "type": "object" },
+      "@container": "@set",
+      "dldescription": "Array of enterprises on the farm"
+    },
+    "replacementRate": {
+      "@id": "[replacementRate](#replacementRate)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "% annual replacement rate in ewe flock or breeding cows"
+    }
+  }
+}

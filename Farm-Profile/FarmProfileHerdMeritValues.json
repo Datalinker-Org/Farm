@@ -3,13 +3,13 @@
     "type": "object",
     "properties": {
         "herdMeritName": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerdMeritValues-HerdMeritName",
+            "@id": "[HerdMeritName](#HerdMeritName)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "The name of this herd merit value"
         },
         "herdMeritValue": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerdMeritValues-HerdMeritValue",
+            "@id": "[HerdMeritValue](#HerdMeritValue)",
             "@type": "xsd:number",
             "type": "number",
             "dldescription": "The value of this herd merit value"

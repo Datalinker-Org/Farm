@@ -3,13 +3,13 @@
     "type": "object",
     "properties": {
         "id": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-Id",
+            "@id": "[Id](#Id)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Internal identifier in the source system"
         },
         "identifiers": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-Identifier",
+            "@id": "[Id](#Id)entifier",
             "@type": "xsd:string",
             "type": "array",
             "items": {
@@ -19,14 +19,14 @@
             "dldescription": "Holding Identifiers using a URN-based identification string containing namespace and unique identifier within the namespace. Used as a unique identifier. Eg. urn:nzl:pri:holding:AgriBase:12345, urn:nzl:pri:holding:FOL_ID:CL:67645"
         },
         "name": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-Name",
+            "@id": "[Name](#Name)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Name of the holding"
         },
         "sites": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSite",
-            "@type": "https://www.datalinker.org/contexts/2.0/FarmProfileSite.jsonld",
+            "@id": "[FarmProfileSite](FarmProfileSite.md)",
+            "@type": "@id",
             "type": "array",
             "items": {
                 "type": "object"
@@ -35,22 +35,22 @@
             "dldescription": "Array of sites in the holding"
         },
         "topography": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-topography",
+            "@id": "[topography](#topography)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Rolling, Easy hill, Steep hill (this enumeration is defined by Overseer). Can be different for other systems"
         },
         "organic": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-Name",
+            "@id": "[Name](#Name)",
             "@type": "xsd:boolean",
             "type": "boolean",
             "dldescription": "Indicates whether holding is organic or not."
         },
-        "meta":{
-            "@id": "https://www.datalinker.org/context/ICARObjectMetaData",
-            "@type": "https://www.datalinker.org/contexts/2.0/ICARObjectMetaData",
-            "type": "object",
-            "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
-        }
+      "meta": {
+        "@id": "https://github.com/Datalinker-Org/ICAR-Rezare/ICARObjectMetaData.md",
+        "@type": "@id",
+        "type": "object",
+        "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
+      }
     }
 }

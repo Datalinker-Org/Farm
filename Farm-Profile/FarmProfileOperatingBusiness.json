@@ -3,14 +3,14 @@
     "type": "object",
     "properties": {
         "id": {
-            "@id": "https://www.datalinker.org/context/FarmProfileOperatingBusiness-Id",
+            "@id": "[Id](#Id)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Internal identifier in the source system"
         },
         "owners": {
             "@id": "http://schema.org/Person",
-            "@type": "http://schema.org/Person.jsonld",
+            "@type": "@id",
             "type": "array",
             "items": {
                 "type": "object"
@@ -19,20 +19,20 @@
             "dldescription": "List of owners of the farm"
         },
         "holding": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding",
-            "@type": "http://www.datalinker.org/contexts/2.0/FarmProfileHolding.jsonld",
+            "@id": "[FarmProfileHolding](FarmProfileHolding.md)",
+            "@type": "@id",
             "type": "object",
             "dldescription": "Provides details of the holding and the sites within it"
         },
         "organization": {
             "@id": "http://schema.org/Organization",
-            "@type": "http://schema.org/Organization.jsonld",
+            "@type": "@id",
             "type": "object",
             "dldescription": "Organisation that owns or controls the farm"
         },
         "herds": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHerd",
-            "@type": "http://www.datalinker.org/contexts/2.0/FarmProfileHerd.jsonld",
+            "@id": "[FarmProfileHerd](FarmProfileHerd.md)",
+            "@type": "@id",
             "type": "array",
             "items": {
                 "type": "object"
@@ -41,8 +41,8 @@
             "dldescription": "Array of herds on the farm"
         },
         "supplyAgreements": {
-            "@id": "https://www.datalinker.org/context/FarmProfileSupplyAgreement",
-            "@type": "http://www.datalinker.org/contexts/2.0/FarmProfileSupplyAgreement.jsonld",
+            "@id": "[FarmProfileSupplyAgreement](FarmProfileSupplyAgreement.md)",
+            "@type": "@id",
             "type": "array",
             "items": {
                 "type": "object"
@@ -51,16 +51,16 @@
             "dldescription": "Indicates the products and organisations that the farm supplies to"
         },
         "type": {
-            "@id": "https://www.datalinker.org/context/FarmProfileHolding-Type",
+            "@id": "[FarmProfileHolding](FarmProfileHolding.md)",
             "@type": "xsd:string",
             "type": "string",
             "dldescription": "Primary or secondary operating business type."
         },
-        "meta":{
-            "@id": "https://www.datalinker.org/context/ICARObjectMetaData",
-            "@type": "https://www.datalinker.org/contexts/2.0/ICARObjectMetaData",
-            "type": "object",
-            "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
-        }
+      "meta": {
+        "@id": "https://github.com/Datalinker-Org/ICAR-Rezare/ICARObjectMetaData.md",
+        "@type": "@id",
+        "type": "object",
+        "dldescription": "Any metadata for the object.  Most likely to use 'modified'"
+      }
     }
 }

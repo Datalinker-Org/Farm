@@ -1,1 +1,108 @@
-{"$schema":"http://json-schema.org/draft-04/schema#","type":"object","properties":{"openingDate":{"@id":"https://www.datalinker.org/context/BalanceSheet-openingDate","@type":"xsd:date","type":"string","dldescription":"The opening date/time of the reporting period"},"balancePeriod":{"@id":"https://www.datalinker.org/context/BalanceSheet-balancePeriod","@type":"xsd:string","type":"string","dldescription":"The duration of a reporting period. For instance, �P1M� is the ISO 8601 short form for one month."},"closingDate":{"@id":"https://www.datalinker.org/context/BalanceSheet-closingDate","@type":"xsd:date","type":"string","dldescription":"Opening Date and Closing Date may be specified in place of Opening Date and Transaction Period."},"createdDate":{"@id":"https://www.datalinker.org/context/BalanceSheet-createdDate","@type":"xsd:date","type":"string","dldescription":"The date in which the transaction was created, with time-zone information if required. May be used for synchronisation."},"updatedDate":{"@id":"https://www.datalinker.org/context/BalanceSheet-updatedDate","@type":"xsd:date","type":"string","dldescription":"The date in which the transaction was updated, with time-zone information if required. May be used for synchronisation"},"accountId":{"@id":"https://www.datalinker.org/context/BalanceSheet-accountId","@type":"xsd:string","type":"string","dldescription":"Unique identifier of the account in the source system"},"accountCode":{"@id":"https://www.datalinker.org/context/BalanceSheet-accountCode","@type":"xsd:string","type":"string","dldescription":"Numeric or string account ledge code as defined in the source system for that farm or enterprise"},"industryAccountCode":{"@id":"https://www.datalinker.org/context/BalanceSheet-industryAccountCode","@type":"xsd:string","type":"string","dldescription":"Industry standard account code (used for benchmarking/reporting). See Appendix A.1 of Financial standard www.farmdatastandards.org.nz"},"category":{"@id":"https://www.datalinker.org/context/BalanceSheet-category","@type":"xsd:string","type":"string","dldescription":"Optional additional categorisation (source system or agreed between exchanging parties)"},"netAmount":{"@id":"https://www.datalinker.org/context/BalanceSheet-netAmount","@type":"xsd:number","type":"integer","dldescription":"The net amount for the transaction; positive for a debit and negative for a credit"},"grossAmount":{"@id":"https://www.datalinker.org/context/BalanceSheet-grossAmount","@type":"xsd:number","type":"integer","dldescription":"The tax inclusive amount (Net Amount + Tax Amount)"},"priceBasis":{"@id":"https://www.datalinker.org/context/BalanceSheet-priceBasis","@type":"xsd:string","type":"string","dldescription":"Describes the pricing basis of the transaction. (See Appendix A.3 of Financial standard www.farmdatastandards.org.nz)"},"description":{"@id":"https://www.datalinker.org/context/BalanceSheet-description","@type":"xsd:string","type":"string","dldescription":"Description of the item"},"quantity":{"@id":"https://www.datalinker.org/context/BalanceSheet-quantity","@type":"xsd:number","type":"integer","dldescription":"Describes the number of units involved in the transaction"},"unit":{"@id":"https://www.datalinker.org/context/BalanceSheet-unit","@type":"xsd:string","type":"string","dldescription":"Describes the unit of measure for the item in the transaction. (See Appendix A.4 of Financial standard www.farmdatastandards.org.nz)"},"netUnitAmount":{"@id":"https://www.datalinker.org/context/BalanceSheet-netUnitAmount","@type":"xsd:number","type":"integer","dldescription":"Describes the value of one unit (Net Amount / Quantity)"},"currency":{"@id":"https://www.datalinker.org/context/BalanceSheet-currency","@type":"xsd:string","type":"string","dldescription":"ISO 4217 International currency code"}}}
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "openingDate": {
+      "@id": "[openingDate](#openingDate)",
+      "@type": "xsd:date",
+      "type": "string",
+      "dldescription": "The opening date/time of the reporting period"
+    },
+    "balancePeriod": {
+      "@id": "[balancePeriod](#balancePeriod)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "The duration of a reporting period. For instance, �P1M� is the ISO 8601 short form for one month."
+    },
+    "closingDate": {
+      "@id": "[closingDate](#closingDate)",
+      "@type": "xsd:date",
+      "type": "string",
+      "dldescription": "Opening Date and Closing Date may be specified in place of Opening Date and Transaction Period."
+    },
+    "createdDate": {
+      "@id": "[createdDate](#createdDate)",
+      "@type": "xsd:date",
+      "type": "string",
+      "dldescription": "The date in which the transaction was created, with time-zone information if required. May be used for synchronisation."
+    },
+    "updatedDate": {
+      "@id": "[updatedDate](#updatedDate)",
+      "@type": "xsd:date",
+      "type": "string",
+      "dldescription": "The date in which the transaction was updated, with time-zone information if required. May be used for synchronisation"
+    },
+    "accountId": {
+      "@id": "[accountId](#accountId)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Unique identifier of the account in the source system"
+    },
+    "accountCode": {
+      "@id": "[accountCode](#accountCode)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Numeric or string account ledge code as defined in the source system for that farm or enterprise"
+    },
+    "industryAccountCode": {
+      "@id": "[industryAccountCode](#industryAccountCode)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Industry standard account code (used for benchmarking/reporting). See Appendix A.1 of [Financial standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Financial%20Data%20Standard/README.md)"
+    },
+    "category": {
+      "@id": "[category](#category)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Optional additional categorisation (source system or agreed between exchanging parties)"
+    },
+    "netAmount": {
+      "@id": "[netAmount](#netAmount)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "The net amount for the transaction; positive for a debit and negative for a credit"
+    },
+    "grossAmount": {
+      "@id": "[grossAmount](#grossAmount)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "The tax inclusive amount (Net Amount + Tax Amount)"
+    },
+    "priceBasis": {
+      "@id": "[priceBasis](#priceBasis)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Describes the pricing basis of the transaction. (See Appendix A.3 of [Financial standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Financial%20Data%20Standard/README.md))"
+    },
+    "description": {
+      "@id": "[description](#description)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Description of the item"
+    },
+    "quantity": {
+      "@id": "[quantity](#quantity)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Describes the number of units involved in the transaction"
+    },
+    "unit": {
+      "@id": "[unit](#unit)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "Describes the unit of measure for the item in the transaction. (See Appendix A.4 of [Financial standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Financial%20Data%20Standard/README.md))"
+    },
+    "netUnitAmount": {
+      "@id": "[netUnitAmount](#netUnitAmount)",
+      "@type": "xsd:number",
+      "type": "integer",
+      "dldescription": "Describes the value of one unit (Net Amount / Quantity)"
+    },
+    "currency": {
+      "@id": "[currency](#currency)",
+      "@type": "xsd:string",
+      "type": "string",
+      "dldescription": "ISO 4217 International currency code"
+    }
+  }
+}
