@@ -1,0 +1,37 @@
+ - <b id="#/properties/locations">locations</b>
+	 - **Description:** Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace. Used as an externally meaningful identifier. e.g. urn:nzl:pri:location:FOL_ID:CL-9587-0176
+	 - **Type:** `array`
+ - <b id="#/properties/farmidentifiers">farmidentifiers</b>
+	 - **Description:** A code used by the source system to identify the farm, such as an internally meaningful identifier
+	 - **Type:** `array`
+ - <b id="#/properties/farmname">farmname</b>
+	 - **Description:** Farm name. e.g. Smith Farms Ltd
+	 - **Type:** `string`
+ - <b id="#/properties/validFrom">validFrom</b>
+	 - **Description:** Location start date. This is an optional field
+	 - **Type:** `string`
+	 - <b id="validfromhttpsgithub.comdatalinker-orgpasture-managementblobmasterpasture-coverpasturecoversfarm.md">Link to schema: [ValidFrom](https://github.com/Datalinker-Org/Pasture-Management/blob/master/Pasture-Cover/PastureCoversFarm.md)</b>
+ - <b id="#/properties/validThrough">validThrough</b>
+	 - **Description:** Location end date. This is an optional field
+	 - **Type:** `string`
+	 - <b id="validthroughhttpsgithub.comdatalinker-orgpasture-managementblobmasterpasture-coverpasturecoversfarm.md">Link to schema: [ValidThrough](https://github.com/Datalinker-Org/Pasture-Management/blob/master/Pasture-Cover/PastureCoversFarm.md)</b>
+ - <b id="#/properties/organization">organization</b>
+	 - **Description:** The official name or registered name of the organization, e.g. Sheep Improvement Ltd.
+	 - **Type:** `string`
+	 - <b id="organizationhttpsgithub.comdatalinker-orgsharedblobmasterorganization.md">Link to schema: [Organization](https://github.com/Datalinker-Org/Shared/blob/master/Organization.md)</b>
+ - <b id="#/properties/transactions">transactions</b>
+	 - **Description:** Link to transactions list of the farm
+	 - **Type:** `string`
+	 - <b id="transactiontransaction.md">Link to schema: [Transaction](Transaction.md)</b>
+ - <b id="#/properties/aggregateTransactions">aggregateTransactions</b>
+	 - **Description:** Link to aggregate transactions list of the farm
+	 - **Type:** `string`
+	 - <b id="aggregatetransactionaggregatetransaction.md">Link to schema: [AggregateTransaction](AggregateTransaction.md)</b>
+ - <b id="#/properties/balanceSheet">balanceSheet</b>
+	 - **Type:** `string`
+	 - <b id="balancesheetbalancesheet.md">Link to schema: [BalanceSheet](BalanceSheet.md)</b>
+ - <b id="#/properties/KPIs">KPIs</b>
+	 - **Type:** `string`
+	 - <b id="kpihttpsgithub.comdatalinker-orgbenchmarksblobmasterbenchmarkkpi.md">Link to schema: [KPI](https://github.com/Datalinker-Org/Benchmarks/blob/master/Benchmark/KPI.md)</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

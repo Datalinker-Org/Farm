@@ -1,0 +1,50 @@
+ - <b id="#/properties/locations">locations</b>
+	 - **Description:** Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace.Used as an externally meaningful identifier. Eg. urn:nzl:pri:location:FOL_ID:CL-9587-0176
+	 - **Type:** `array`
+ - <b id="#/properties/identifier">identifier</b>
+	 - **Description:** Farm Identifier using a URN-based identification string containing namespace and unique identifier within the namespace. Used as an extremely meaningful identifier. Eg. urn:nzl:pri:farm:AgriBase:12345, urn:nzl:pri:farm:Farmax:67645
+	 - **Type:** `array`
+ - <b id="#/properties/name">name</b>
+	 - **Description:** Name of the Farm. Eg. Green Acres Farm
+	 - **Type:** `string`
+ - <b id="#/properties/type">type</b>
+	 - **Description:** Describes the type of enterprise the animals belong to. Enumeration : Own Stock, Finishing, Contract Grazing
+	 - **Type:** `string`
+ - <b id="#/properties/use">use</b>
+	 - **Description:** Describes the use of the enterprise the animals belong to. Values can be Stud, Commercial
+	 - **Type:** `string`
+ - <b id="#/properties/totalArea">totalArea</b>
+	 - **Description:** Total farm area expressed in hectares
+	 - **Type:** `integer`
+ - <b id="#/properties/cultivableArea">cultivableArea</b>
+	 - **Description:** Effective area of the farm for cultivation (cropping) purposes
+	 - **Type:** `integer`
+ - <b id="#/properties/subtype">subtype</b>
+	 - **Description:**  DairyNZ farm system number, B+LNZ farm class
+	 - **Type:** `string`
+ - <b id="#/properties/topography">topography</b>
+	 - **Description:** Rolling, Easy hill, Steep hill (this enumeration is defined by Overseer). Can be different for other systems
+	 - **Type:** `string`
+ - <b id="#/properties/organization">organization</b>
+	 - **Description:** Organisation that owns or controls the farm
+	 - **Type:** `object`
+	 - <b id="organizationhttpsgithub.comdatalinker-orgsharedblobmasterorganization.md">Link to schema: [Organization](https://github.com/Datalinker-Org/Shared/blob/master/Organization.md)</b>
+ - <b id="#/properties/customerName">customerName</b>
+	 - **Description:** Name of Dairy or Meat Processor
+	 - **Type:** `string`
+ - <b id="#/properties/supplyType">supplyType</b>
+	 - **Description:** Milk, Meat,Fibre or Other
+	 - **Type:** `string`
+ - <b id="#/properties/farmBlocks">farmBlocks</b>
+	 - **Description:** Array of blocks in the farm
+	 - **Type:** `array`
+	 - <b id="farmblocksfarmblocks.md">Link to schema: [FarmBlocks](FarmBlocks.md)</b>
+ - <b id="#/properties/farmEnterprise">farmEnterprise</b>
+	 - **Description:** Array of enterprises on the farm
+	 - **Type:** `array`
+	 - <b id="farmenterprisefarmenterprise.md">Link to schema: [FarmEnterprise](FarmEnterprise.md)</b>
+ - <b id="#/properties/replacementRate">replacementRate</b>
+	 - **Description:** % annual replacement rate in ewe flock or breeding cows
+	 - **Type:** `integer`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

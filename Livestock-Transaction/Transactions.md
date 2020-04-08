@@ -1,0 +1,22 @@
+ - <b id="#/properties/category">category</b>
+	 - **Description:** Describes the category of stock reconciliation transaction. Enumerated values are Animals Entering System, Animals Leaving System - Losses, Animals Leaving System - Consumed, Animals Arriving, Animals Departing, Animals Aging, Current Balance
+ - <b id="#/properties/type">type</b>
+	 - **Description:** Describes the sub-type of stock reconciliation transaction. Refer to [Stock Reconciliation Data Standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Stock%20Reconciliation/README.md)
+ - <b id="#/properties/txnId">txnId</b>
+	 - **Description:** Holding place Identifier for the transaction in the source system
+	 - **Type:** `string`
+ - <b id="#/properties/dateOfTxn">dateOfTxn</b>
+	 - **Description:** ISO 8601 Date; Transaction date, Balance date or Opening date of the transaction period depending on Transaction Category
+	 - **Type:** `string`
+ - <b id="#/properties/closingDate">closingDate</b>
+	 - **Description:** Closing Date of the transaction period (if relevant)
+	 - **Type:** `string`
+ - <b id="#/properties/otherParty">otherParty</b>
+	 - **Description:** Array of organisations
+	 - **Type:** `array`
+ - <b id="#/properties/trnxItems">trnxItems</b>
+	 - **Description:** Array of Transaction Items: Item[], n=1..2
+	 - **Type:** `object`
+	 - <b id="trnxitemstrnxitems.md">Link to schema: [trnxItems](trnxItems.md)</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

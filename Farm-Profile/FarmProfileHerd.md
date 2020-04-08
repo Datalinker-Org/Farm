@@ -1,0 +1,53 @@
+ - <b id="#/properties/id">id</b>
+	 - **Description:** Internal identifier in the source system
+	 - **Type:** `string`
+ - <b id="#/properties/identifiers">identifiers</b>
+	 - **Description:** Herd Identifiers using a URN-based identification string containing namespace and unique identifier within the namespace. Used as a unique identifier. Eg. urn:nzl:pri:herd:AgriBase:12345, urn:nzl:pri:herd:FOL_ID:CL:67645
+	 - **Type:** `array`
+ - <b id="#/properties/type">type</b>
+	 - **Description:** Describes the type of enterprise the animals belong to. Enumeration : Own Stock, Finishing, Contract Grazing
+	 - **Type:** `string`
+ - <b id="#/properties/use">use</b>
+	 - **Description:** Describes the use of the enterprise the animals belong to. Values can be Stud, Commercial
+	 - **Type:** `string`
+ - <b id="#/properties/replacementRate">replacementRate</b>
+	 - **Description:** % annual replacement rate in ewe flock or breeding cows
+	 - **Type:** `integer`
+ - <b id="#/properties/breedAssessed">breedAssessed</b>
+	 - **Description:** Description of a genetic package of the Primary Breed. For more details [Farm Data Standards](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Additional%20Value%20Lists/FarmDataStandards_Animal-Breed-List.md)
+	 - **Type:** `array`
+ - <b id="#/properties/speciesSimpleName">speciesSimpleName</b>
+	 - **Description:** Cattle, Deer, Goats, Sheep
+	 - **Type:** `string`
+ - <b id="#/properties/dairyBusinessModel">dairyBusinessModel</b>
+	 - **Description:** Owner Operated, 50-50 sharemilker, Variable order
+	 - **Type:** `string`
+ - <b id="#/properties/calvingSeason">calvingSeason</b>
+	 - **Description:** Spring,Autumn,Spring and Autumn, Other
+	 - **Type:** `string`
+ - <b id="#/properties/peakCowsMilked">peakCowsMilked</b>
+	 - **Description:** Peak numbers of cows milked (applicable for Dairy)
+	 - **Type:** `integer`
+ - <b id="#/properties/avgLiveWts">avgLiveWts</b>
+	 - **Description:** Array of average live weights of the animal according to seasons
+	 - **Type:** `array`
+	 - <b id="avglivewtshttpsgithub.comdatalinker-organimal-datablobmastermerits_traits_and_sessionsavglivewts.md">Link to schema: [avgLiveWts](https://github.com/Datalinker-Org/Animal-Data/blob/master/Merits_Traits_and_Sessions/AvgLiveWts.md)</b>
+ - <b id="#/properties/herdMeritValues">herdMeritValues</b>
+	 - **Description:** Array of merit values for the herd
+	 - **Type:** `array`
+	 - <b id="farmprofileherdfarmprofileherd.mdmeritvalues">Link to schema: [FarmProfileHerd](FarmProfileHerd.md)MeritValues</b>
+ - <b id="#/properties/totalRSU">totalRSU</b>
+	 - **Description:** Total revised stock units in this enterprise (having been calculated using the feed requirements of the animal numbers specified for the enterprise).
+	 - **Type:** `integer`
+ - <b id="#/properties/breedClass">breedClass</b>
+	 - **Description:** Describes the purpose for the identified species : Dual Purpose, Fine Wool, Meat/Terminal, British, European
+	 - **Type:** `string`
+ - <b id="#/properties/avgMatureWt">avgMatureWt</b>
+	 - **Description:** Weight of mature breeding stock (cows,hinds,ewes) in kg
+	 - **Type:** `integer`
+ - <b id="#/properties/meta">meta</b>
+	 - **Description:** Any metadata for the object.  Most likely to use 'modified'
+	 - **Type:** `object`
+	 - <b id="httpsgithub.comdatalinker-orgicar-rezareicarobjectmetadata.md">Link to schema: https://github.com/Datalinker-Org/ICAR-Rezare/ICARObjectMetaData.md</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

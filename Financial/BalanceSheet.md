@@ -1,0 +1,53 @@
+ - <b id="#/properties/openingDate">openingDate</b>
+	 - **Description:** The opening date/time of the reporting period
+	 - **Type:** `string`
+ - <b id="#/properties/balancePeriod">balancePeriod</b>
+	 - **Description:** The duration of a reporting period. For instance, �P1M� is the ISO 8601 short form for one month.
+	 - **Type:** `string`
+ - <b id="#/properties/closingDate">closingDate</b>
+	 - **Description:** Opening Date and Closing Date may be specified in place of Opening Date and Transaction Period.
+	 - **Type:** `string`
+ - <b id="#/properties/createdDate">createdDate</b>
+	 - **Description:** The date in which the transaction was created, with time-zone information if required. May be used for synchronisation.
+	 - **Type:** `string`
+ - <b id="#/properties/updatedDate">updatedDate</b>
+	 - **Description:** The date in which the transaction was updated, with time-zone information if required. May be used for synchronisation
+	 - **Type:** `string`
+ - <b id="#/properties/accountId">accountId</b>
+	 - **Description:** Unique identifier of the account in the source system
+	 - **Type:** `string`
+ - <b id="#/properties/accountCode">accountCode</b>
+	 - **Description:** Numeric or string account ledge code as defined in the source system for that farm or enterprise
+	 - **Type:** `string`
+ - <b id="#/properties/industryAccountCode">industryAccountCode</b>
+	 - **Description:** Industry standard account code (used for benchmarking/reporting). See Appendix A.1 of [Financial standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Financial%20Data%20Standard/README.md)
+	 - **Type:** `string`
+ - <b id="#/properties/category">category</b>
+	 - **Description:** Optional additional categorisation (source system or agreed between exchanging parties)
+	 - **Type:** `string`
+ - <b id="#/properties/netAmount">netAmount</b>
+	 - **Description:** The net amount for the transaction; positive for a debit and negative for a credit
+	 - **Type:** `integer`
+ - <b id="#/properties/grossAmount">grossAmount</b>
+	 - **Description:** The tax inclusive amount (Net Amount + Tax Amount)
+	 - **Type:** `integer`
+ - <b id="#/properties/priceBasis">priceBasis</b>
+	 - **Description:** Describes the pricing basis of the transaction. (See Appendix A.3 of [Financial standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Financial%20Data%20Standard/README.md))
+	 - **Type:** `string`
+ - <b id="#/properties/description">description</b>
+	 - **Description:** Description of the item
+	 - **Type:** `string`
+ - <b id="#/properties/quantity">quantity</b>
+	 - **Description:** Describes the number of units involved in the transaction
+	 - **Type:** `integer`
+ - <b id="#/properties/unit">unit</b>
+	 - **Description:** Describes the unit of measure for the item in the transaction. (See Appendix A.4 of [Financial standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Financial%20Data%20Standard/README.md))
+	 - **Type:** `string`
+ - <b id="#/properties/netUnitAmount">netUnitAmount</b>
+	 - **Description:** Describes the value of one unit (Net Amount / Quantity)
+	 - **Type:** `integer`
+ - <b id="#/properties/currency">currency</b>
+	 - **Description:** ISO 4217 International currency code
+	 - **Type:** `string`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

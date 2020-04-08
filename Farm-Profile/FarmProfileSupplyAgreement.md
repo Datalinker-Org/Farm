@@ -1,0 +1,25 @@
+ - <b id="#/properties/id">id</b>
+	 - **Description:** Internal identifier in the source system
+	 - **Type:** `string`
+ - <b id="#/properties/processor">processor</b>
+	 - **Description:** Details of the processor
+	 - **Type:** `object`
+	 - <b id="httpschema.orgorganization">Link to schema: http://schema.org/Organization</b>
+ - <b id="#/properties/supplierId">supplierId</b>
+	 - **Description:** Unique identifier of the supplier
+	 - **Type:** `string`
+ - <b id="#/properties/UNSPSC">UNSPSC</b>
+	 - **Description:** Describes the product being supplied. Refer to http://www.unspsc.org for more details
+	 - **Type:** `string`
+ - <b id="#/properties/dateFrom">dateFrom</b>
+	 - **Description:** Date from which the supplier agreement starts
+	 - **Type:** `string`
+ - <b id="#/properties/dateTo">dateTo</b>
+	 - **Description:** Date on which the supplier agreement ends
+	 - **Type:** `string`
+ - <b id="#/properties/meta">meta</b>
+	 - **Description:** Any metadata for the object.  Most likely to use 'modified'
+	 - **Type:** `object`
+	 - <b id="httpsgithub.comdatalinker-orgicar-rezareicarobjectmetadata.md">Link to schema: https://github.com/Datalinker-Org/ICAR-Rezare/ICARObjectMetaData.md</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

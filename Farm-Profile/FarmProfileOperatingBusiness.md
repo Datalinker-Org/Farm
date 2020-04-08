@@ -1,0 +1,33 @@
+ - <b id="#/properties/id">id</b>
+	 - **Description:** Internal identifier in the source system
+	 - **Type:** `string`
+ - <b id="#/properties/owners">owners</b>
+	 - **Description:** List of owners of the farm
+	 - **Type:** `array`
+	 - <b id="httpschema.orgperson">Link to schema: http://schema.org/Person</b>
+ - <b id="#/properties/holding">holding</b>
+	 - **Description:** Provides details of the holding and the sites within it
+	 - **Type:** `object`
+	 - <b id="farmprofileholdingfarmprofileholding.md">Link to schema: [FarmProfileHolding](FarmProfileHolding.md)</b>
+ - <b id="#/properties/organization">organization</b>
+	 - **Description:** Organisation that owns or controls the farm
+	 - **Type:** `object`
+	 - <b id="httpschema.orgorganization">Link to schema: http://schema.org/Organization</b>
+ - <b id="#/properties/herds">herds</b>
+	 - **Description:** Array of herds on the farm
+	 - **Type:** `array`
+	 - <b id="farmprofileherdfarmprofileherd.md">Link to schema: [FarmProfileHerd](FarmProfileHerd.md)</b>
+ - <b id="#/properties/supplyAgreements">supplyAgreements</b>
+	 - **Description:** Indicates the products and organisations that the farm supplies to
+	 - **Type:** `array`
+	 - <b id="farmprofilesupplyagreementfarmprofilesupplyagreement.md">Link to schema: [FarmProfileSupplyAgreement](FarmProfileSupplyAgreement.md)</b>
+ - <b id="#/properties/type">type</b>
+	 - **Description:** Primary or secondary operating business type.
+	 - **Type:** `string`
+	 - <b id="farmprofileholdingfarmprofileholding.md">Link to schema: [FarmProfileHolding](FarmProfileHolding.md)</b>
+ - <b id="#/properties/meta">meta</b>
+	 - **Description:** Any metadata for the object.  Most likely to use 'modified'
+	 - **Type:** `object`
+	 - <b id="httpsgithub.comdatalinker-orgicar-rezareicarobjectmetadata.md">Link to schema: https://github.com/Datalinker-Org/ICAR-Rezare/ICARObjectMetaData.md</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

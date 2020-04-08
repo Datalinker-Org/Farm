@@ -1,0 +1,36 @@
+ - <b id="#/properties/locations">locations</b>
+	 - **Description:** Location identifier usng a URN-based identification string containing namespace and unique identifier within the namespace.Used as an externally meaningful identifier. Eg. urn:nzl:pri:location:FOL_ID:CL-9587-0176
+ - <b id="#/properties/identifier">identifier</b>
+	 - **Description:** Farm Identifier using a URN-based identification string containing namespace and unique identifier within the namespace. Used as an extremely meaningful identifier. Eg. urn:nzl:pri:farm:AgriBase:12345, urn:nzl:pri:farm:Farmax:67645
+ - <b id="#/properties/name">name</b>
+	 - **Description:** Name of the Farm. Eg. Green Acres Farm
+	 - **Type:** `string`
+ - <b id="#/properties/type">type</b>
+	 - **Description:** Describes the type of enterprise the animals belong to. Enumeration : Own Stock, Finishing, Contract Grazing
+	 - **Type:** `string`
+ - <b id="#/properties/use">use</b>
+	 - **Description:** Describes the use of the enterprise the animals belong to. Values can be Stud, Commercial
+	 - **Type:** `string`
+ - <b id="#/properties/owner">owner</b>
+	 - **Description:** Describes the person who owns the animals and/or the enterprise.
+	 - **Type:** `string`
+ - <b id="#/properties/validFrom">validFrom</b>
+	 - **Description:** Location start date (optional).
+	 - **Type:** `string`
+ - <b id="#/properties/validThrough">validThrough</b>
+	 - **Description:**  Location start date (optional).
+	 - **Type:** `string`
+ - <b id="#/properties/organization">organization</b>
+	 - **Description:** Organisation that owns or controls the farm
+	 - **Type:** `object`
+	 - <b id="organizationhttpsgithub.comdatalinker-orgsharedblobmasterorganization.md">Link to schema: [Organization](https://github.com/Datalinker-Org/Shared/blob/master/Organization.md)</b>
+ - <b id="#/properties/contactPoint">contactPoint</b>
+	 - **Description:** Contact details of persons responsible for the farm
+	 - **Type:** `object`
+	 - <b id="contactpointhttpsgithub.comdatalinker-orgsharedblobmastercontactpoint.md">Link to schema: [ContactPoint](https://github.com/Datalinker-Org/Shared/blob/master/ContactPoint.md)</b>
+ - <b id="#/properties/transactions">transactions</b>
+	 - **Description:** Provides further information on the types and identifiers for transactions related to stock reconciliation and the details of those transactions.
+	 - **Type:** `object`
+	 - <b id="transactionstransactions.md">Link to schema: [Transactions](Transactions.md)</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

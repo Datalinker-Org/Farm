@@ -1,0 +1,73 @@
+ - <b id="#/properties/speciesSimpleName">speciesSimpleName</b>
+	 - **Description:** Common term for species. Enum: Cattle, Deer, Goats, Sheep
+ - <b id="#/properties/speciesBinomialName">speciesBinomialName</b>
+	 - **Description:** Species Binomial Name is used in the Animal item combining Genus and Species, e.g. Bos taurus (cattle).
+ - <b id="#/properties/sex">sex</b>
+	 - **Description:** The gender or sex of the animal. This may be combined with state information to indicate the fertility status of the animal. Enumeration values: Male, Female or NULL(for unknowns).
+ - <b id="#/properties/fertilityStatus">fertilityStatus</b>
+	 - **Description:** Describes if an animal is known to be fertile or not, inlcuding if it has been neutered. Values - Unknown, Fertile, Infertile, Neutered, Cryptorchid
+ - <b id="#/properties/reproductiveStatus">reproductiveStatus</b>
+	 - **Description:** Describes whether an animal is pregnant at the time of stock reconciliation. Note this may change many time over an animal's life.Values = Unknown, Cycling, Not Cycling, Pregnant, Involuting
+	 - **Type:** `string`
+ - <b id="#/properties/birthYear">birthYear</b>
+	 - **Description:** The contemporary group or cohort for the year of birth into which animals are categorised. Known as YearBorn in many systems.This is a derived field, calculated from the Birth Date where available. It is included here as some systems interchange this data. Note that in some occasional circumstances, this may be different by 1 from the year component of the birth date (e.g. an animal born early in the northern hemisphere or late in the southern hemisphere).
+	 - **Type:** `string`
+ - <b id="#/properties/birthCohort">birthCohort</b>
+	 - **Description:** Describes the season within the birth year, most likely calculated from the birth date. 
+	 - **Type:** `string`
+ - <b id="#/properties/birthDate">birthDate</b>
+	 - **Description:** Date on which animal was born.
+	 - **Type:** `string`
+ - <b id="#/properties/birthDateConfidence">birthDateConfidence</b>
+	 - **Description:** 3 character string with positional charcters representing Year Month Date (YMD). Uses a variation on the Date Accuracy Indicator used by the Australian Institute of Health and Welfare2, adjusted to match the format of ISO dates. Values are A  accurate, E  estimate, U  unknown (value=A, E or U) EG. AEU means Year Accurate, Month Estimated and Date Unknown. 
+	 - **Type:** `string`
+ - <b id="#/properties/breedAssessed">breedAssessed</b>
+	 - **Description:** Visual assessment of animal's primary or major breed. Known as Breed in many systems.
+	 - **Type:** `string`
+ - <b id="#/properties/stockClassId">stockClassId</b>
+	 - **Description:** Reference of the Stock Class the animal belongs to
+	 - **Type:** `string`
+ - <b id="#/properties/stockClassName">stockClassName</b>
+	 - **Description:** Name of the stock class the animal belongs to
+	 - **Type:** `string`
+ - <b id="#/properties/enterpriseUse">enterpriseUse</b>
+	 - **Description:** current values are: [Capital, Trading, Genetics, Dairy] - stock tends to be capital or trading or genetics and may also be dairy (or not) - could add Meat, Fibre
+	 - **Type:** `array`
+ - <b id="#/properties/groupLocation">groupLocation</b>
+	 - **Description:** Location identifier to which the group belongs. Data type to be determined, most likely NAIT Location.
+	 - **Type:** `string`
+ - <b id="#/properties/groupName">groupName</b>
+	 - **Description:** Textual name of the group within the location.
+	 - **Type:** `string`
+ - <b id="#/properties/groupType">groupType</b>
+	 - **Description:** Distinguishes between a physical management group (a mob of some sort) and other sorts of groupings such as a logical group of animals for analysis, or a planned group (a draft list). Values = Physical, Logical, Planned, NULL
+	 - **Type:** `string`
+ - <b id="#/properties/groupId">groupId</b>
+	 - **Description:** Internal ID for group in source system. Identification of a collective group of animals, through a unique group identifier.e.g.urn:nzl:pri:animal:sil:GroupID:1
+	 - **Type:** `string`
+ - <b id="#/properties/quantity">quantity</b>
+	 - **Description:** Describes the Number of stock units in a transaction
+	 - **Type:** `integer`
+ - <b id="#/properties/value">value</b>
+	 - **Description:** Monetary value of stock. $/unit, $/head, total $
+	 - **Type:** `integer`
+ - <b id="#/properties/valueType">valueType</b>
+	 - **Description:** Describes the type of the monetary value, Unknown = 0, $/unit =1 , $/head = 2, total $ = 3
+	 - **Type:** `string`
+ - <b id="#/properties/meanWt">meanWt</b>
+	 - **Description:** Average live weight (kg) recorded on a group of animals.
+	 - **Type:** `integer`
+ - <b id="#/properties/netValue">netValue</b>
+	 - **Description:** Describes the net value of the stock
+	 - **Type:** `integer`
+ - <b id="#/properties/netUnitVal">netUnitVal</b>
+	 - **Description:** Describes the value of one unit (Net Value / Quantity)
+	 - **Type:** `integer`
+ - <b id="#/properties/unit">unit</b>
+	 - **Description:** Describes the unit of measure for the item in the transaction-/head, /kg
+	 - **Type:** `string`
+ - <b id="#/properties/animals">animals</b>
+	 - **Description:** Points to a session of animal data (Optional)
+	 - **Type:** `string`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

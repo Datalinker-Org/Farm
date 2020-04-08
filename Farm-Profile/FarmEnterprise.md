@@ -1,0 +1,42 @@
+ - <b id="#/properties/identifier">identifier</b>
+	 - **Description:** Herd of Flock identifier using URN
+	 - **Type:** `string`
+ - <b id="#/properties/speciesName">speciesName</b>
+	 - **Description:** Cattle, Deer, Goats, Sheep
+	 - **Type:** `string`
+ - <b id="#/properties/use">use</b>
+	 - **Description:** Dairy, Stud, Grazing, Breeding,Finishing,Meat, Fibre,Velvet
+	 - **Type:** `string`
+ - <b id="#/properties/breedAssessed">breedAssessed</b>
+	 - **Description:** Description of a genetic package of the Primary Breed
+	 - **Type:** `string`
+ - <b id="#/properties/dairyBusinessModel">dairyBusinessModel</b>
+	 - **Description:** Owner Operated, 50-50 sharemilker, Variable order
+	 - **Type:** `string`
+ - <b id="#/properties/calvingSeason">calvingSeason</b>
+	 - **Description:** Spring,Autumn,Spring and Autumn, Other
+	 - **Type:** `string`
+ - <b id="#/properties/peakCowsMilked">peakCowsMilked</b>
+	 - **Description:** Peak numbers of cows milked
+	 - **Type:** `string`
+ - <b id="#/properties/avgLiveWts">avgLiveWts</b>
+	 - **Description:** Array of average live weights of the animal according to seasons
+	 - **Type:** `array`
+	 - <b id="avglivewtshttpsgithub.comdatalinker-organimal-datablobmastermerits_traits_and_sessionsavglivewts.md">Link to schema: [avgLiveWts](https://github.com/Datalinker-Org/Animal-Data/blob/master/Merits_Traits_and_Sessions/AvgLiveWts.md)</b>
+ - <b id="#/properties/herdBW">herdBW</b>
+	 - **Description:** Currency/%Reliability: the average Breeding Worth of the animals in the herd. Measures the ability to breed profitable replacements. Expresses the extra net farm income per year (per 5 tonnes of dry matter fed) relative to the current genetic base that will be passed on to progeny of the cows in the herd. Reliability measures how much information has contributed to the trait evaluation for the animals.
+	 - **Type:** `string`
+ - <b id="#/properties/herdPW">herdPW</b>
+	 - **Description:** Currency/%Reliability: the average Production Worth of the animals in the herd. Measures the lifetime productive ability. Expresses the extra net farm income per year (per 5 tonnes of dry matter fed) relative to the current genetic base that will be produced by cows in this herd during their lifetime. Reliability measures how much information has contributed to the trait evaluation for the animals
+	 - **Type:** `string`
+ - <b id="#/properties/totalRSU">totalRSU</b>
+	 - **Description:** Total revised stock units in this enterprise (having been calculated using the feed requirements of the animal numbers specified for the enterprise).
+	 - **Type:** `string`
+ - <b id="#/properties/breedClass">breedClass</b>
+	 - **Description:** Describes the purpose for the identified species : Dual Purpose, Fine Wool, Meat/Terminal, British, European
+	 - **Type:** `string`
+ - <b id="#/properties/avgMatureWt">avgMatureWt</b>
+	 - **Description:** Weight of mature breeding stock (cows,hinds,ewes) in kg
+	 - **Type:** `string`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

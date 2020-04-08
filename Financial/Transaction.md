@@ -1,0 +1,41 @@
+ - <b id="#/properties/transactionId">transactionId</b>
+	 - **Description:** Unique identifier for the transaction in the source system
+	 - **Type:** `string`
+ - <b id="#/properties/transactionNumber">transactionNumber</b>
+	 - **Description:** A visual number or identifier for the transaction (typically bounded to farm/enterprise)
+	 - **Type:** `integer`
+ - <b id="#/properties/transactionDate">transactionDate</b>
+	 - **Description:** The date of the transaction
+	 - **Type:** `string`
+ - <b id="#/properties/postingDate">postingDate</b>
+	 - **Description:** The date of financial posting (for instance invoice date may be later than the actual sale event)
+	 - **Type:** `string`
+ - <b id="#/properties/reference">reference</b>
+	 - **Description:** A reference code such as an invoice number or purchase order number
+	 - **Type:** `string`
+ - <b id="#/properties/otherPartyId">otherPartyId</b>
+	 - **Description:** An identifier of another party within the source system
+	 - **Type:** `string`
+ - <b id="#/properties/otherPartyContact">otherPartyContact</b>
+	 - **Description:** Name, short form contact details of supplier/receiver. Only intended for reference, not e-commerce.
+	 - **Type:** `string`
+ - <b id="#/properties/createdDate">createdDate</b>
+	 - **Description:** The date in which the transaction was created, with time-zone information if required. May be used for synchronisation.
+	 - **Type:** `string`
+ - <b id="#/properties/updatedDate">updatedDate</b>
+	 - **Description:** The date in which the transaction was updated, with time-zone information if required. May be used for synchronisation.
+	 - **Type:** `string`
+ - <b id="#/properties/url">url</b>
+	 - **Description:** Link to a source document if any
+	 - **Type:** `integer`
+ - <b id="#/properties/subTotal">subTotal</b>
+	 - **Description:** Sub-total of the item line amounts in the transaction
+	 - **Type:** `string`
+ - <b id="#/properties/subTotalTax">subTotalTax</b>
+	 - **Description:** Sub-total of the tax item line amounts in the transaction
+	 - **Type:** `string`
+ - <b id="#/properties/transactionLine">transactionLine</b>
+	 - **Description:** Details the Transaction Line in the source system
+	 - **Type:** `array`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

@@ -1,0 +1,53 @@
+ - <b id="#/properties/lineId">lineId</b>
+	 - **Description:** Unique identifier for the transaction in the source system
+	 - **Type:** `string`
+ - <b id="#/properties/lineNumber">lineNumber</b>
+	 - **Description:** Provides a line number within the transaction
+	 - **Type:** `integer`
+ - <b id="#/properties/accountId">accountId</b>
+	 - **Description:** Unique identifier of the account in the source system
+	 - **Type:** `string`
+ - <b id="#/properties/accountCode">accountCode</b>
+	 - **Description:** Numeric or string account ledge code as defined in the source system for that farm or enterprise
+	 - **Type:** `string`
+ - <b id="#/properties/industryAccountCode">industryAccountCode</b>
+	 - **Description:** Industry standard account code (used for benchmarking/reporting). Refer Appendix A.1 of [Financial standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Financial%20Data%20Standard/README.md)
+	 - **Type:** `string`
+ - <b id="#/properties/category">category</b>
+	 - **Description:** Optional additional categorisation (source system or agreed between exchanging parties)
+	 - **Type:** `string`
+ - <b id="#/properties/netAmount">netAmount</b>
+	 - **Description:** The net amount for the transaction; positive for a debit and negative for a credit
+	 - **Type:** `integer`
+ - <b id="#/properties/taxAmount">taxAmount</b>
+	 - **Description:** The amount of tax in the transaction
+	 - **Type:** `integer`
+ - <b id="#/properties/taxType">taxType</b>
+	 - **Description:** The tax type (Refer Appendix A.2 of [Financial standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Financial%20Data%20Standard/README.md))
+	 - **Type:** `string`
+ - <b id="#/properties/grossAmount">grossAmount</b>
+	 - **Description:** The tax inclusive amount (Net Amount + Tax Amount)
+	 - **Type:** `integer`
+ - <b id="#/properties/priceBasis">priceBasis</b>
+	 - **Description:** Describes the pricing basis of the transaction. (See Appendix A.3 of [Financial standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Financial%20Data%20Standard/README.md))
+	 - **Type:** `string`
+ - <b id="#/properties/description">description</b>
+	 - **Description:** Description of the transaction
+	 - **Type:** `string`
+ - <b id="#/properties/quantity">quantity</b>
+	 - **Description:** Describes the number of units involved in the transaction
+	 - **Type:** `integer`
+ - <b id="#/properties/unit">unit</b>
+	 - **Description:** Describes the unit of measure for the item in the transaction. (See Appendix A.4 of [Financial standard](https://github.com/Datalinker-Org/Farm-Data-Standards/blob/master/Financial%20Data%20Standard/README.md))
+	 - **Type:** `string`
+ - <b id="#/properties/netUnitAmount">netUnitAmount</b>
+	 - **Description:** Describes the value of one unit (Net Amount / Quantity)
+	 - **Type:** `integer`
+ - <b id="#/properties/currency">currency</b>
+	 - **Description:** ISO 4217 International currency code
+	 - **Type:** `string`
+ - <b id="#/properties/url">url</b>
+	 - **Description:** Link to a source document
+	 - **Type:** `string`
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_

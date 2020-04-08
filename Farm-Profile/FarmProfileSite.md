@@ -1,0 +1,86 @@
+ - <b id="#/properties/id">id</b>
+	 - **Description:** Identifier for the site
+	 - **Type:** `string`
+ - <b id="#/properties/identifiers">identifiers</b>
+	 - **Description:** Not mandatory. Site identifiers using a URN-based identification string containing namespace and unique identifier within the namespace. Used as unique identifier. Eg. urn:nzl:pri:site:AgriBase:12345, urn:nzl:pri:site:FOL_ID:CL:67645
+	 - **Type:** `array`
+ - <b id="#/properties/name">name</b>
+	 - **Description:** Name of the site
+	 - **Type:** `string`
+ - <b id="#/properties/totalArea">totalArea</b>
+	 - **Description:** Total site area expressed in m2
+	 - **Type:** `integer`
+	 - <b id="farmprofileholdingfarmprofileholding.md">Link to schema: [FarmProfileHolding](FarmProfileHolding.md)</b>
+ - <b id="#/properties/effectiveArea">effectiveArea</b>
+	 - **Description:** Site effective area in m2
+	 - **Type:** `integer`
+ - <b id="#/properties/ungrazeableArea">ungrazeableArea</b>
+	 - **Description:** Site ungrazeable area in m2
+	 - **Type:** `integer`
+ - <b id="#/properties/croppingArea">croppingArea</b>
+	 - **Description:** Area planted in crop. In m2
+	 - **Type:** `integer`
+ - <b id="#/properties/cultivableArea">cultivableArea</b>
+	 - **Description:** Effective area of the farm for cultivation (cropping) purposes
+	 - **Type:** `integer`
+	 - <b id="farmprofileholdingfarmprofileholding.md">Link to schema: [FarmProfileHolding](FarmProfileHolding.md)</b>
+ - <b id="#/properties/ownership">ownership</b>
+	 - **Description:** Values can be 'Owned' or 'Leased'
+	 - **Type:** `string`
+ - <b id="#/properties/topography">topography</b>
+	 - **Description:** Values can be Flat,Rolling,Easy hill, Steep hill
+	 - **Type:** `string`
+ - <b id="#/properties/type">type</b>
+	 - **Description:** Pasture, Support or Crop
+	 - **Type:** `string`
+ - <b id="#/properties/validFrom">validFrom</b>
+	 - **Description:** Date started operating for specific paddock type
+	 - **Type:** `string`
+ - <b id="#/properties/validTo">validTo</b>
+	 - **Description:** Date ended(ceased) operating for specific paddock type
+	 - **Type:** `string`
+ - <b id="#/properties/cloverLevel">cloverLevel</b>
+	 - **Description:** Annual average clover content (as a proportion of pasture dry matter) where fertiliser N inputs are not applied. Enumeration defined by Overseer. Enumeration: Very low, Low, Medium, High, Very high
+	 - **Type:** `integer`
+ - <b id="#/properties/pastureType">pastureType</b>
+	 - **Description:** Enumeration: Ryegrass/white clover, Browntop, Unimproved/tussock grasslands, Summer C4 (paspalum) pastures, C4 (kikuyu) pastures, Lucerne, Grass only (enumeration defined by Overseer)
+	 - **Type:** `string`
+ - <b id="#/properties/pastureUtilisation">pastureUtilisation</b>
+	 - **Description:** Expressed in percentage
+	 - **Type:** `integer`
+ - <b id="#/properties/pastureSpecies">pastureSpecies</b>
+	 - **Description:** Plant species names as defined in http://www.feedipedia.org/content/feeds?category=15965
+	 - **Type:** `string`
+ - <b id="#/properties/avgPastureNConc">avgPastureNConc</b>
+	 - **Description:** Expressed in percentage
+	 - **Type:** `integer`
+ - <b id="#/properties/roadAddress">roadAddress</b>
+	 - **Description:** Road address of the block
+	 - **Type:** `string`
+ - <b id="#/properties/stockTypes">stockTypes</b>
+	 - **Description:** Dairy Cows [Cows], Dairy Replacements [Young Stock], Pigs, Sheep, Beef Cattle [Cattle], Deer
+	 - **Type:** `array`
+ - <b id="#/properties/numberOfStock">numberOfStock</b>
+	 - **Description:** Number of animals
+	 - **Type:** `integer`
+ - <b id="#/properties/dtStockCome">dtStockCome</b>
+	 - **Description:** Date when the animals came in
+	 - **Type:** `string`
+ - <b id="#/properties/dtStockLeave">dtStockLeave</b>
+	 - **Description:** Date when the animals moved out
+	 - **Type:** `string`
+ - <b id="#/properties/areaHayPerSilageHarvested">areaHayPerSilageHarvested</b>
+	 - **Description:** Expressed in m2
+	 - **Type:** `integer`
+ - <b id="#/properties/destinationHaySilage">destinationHaySilage</b>
+	 - **Description:** Fed on support block, Milking area or Elsewhere (defined by Overseer)
+	 - **Type:** `string`
+ - <b id="#/properties/runoff">runoff</b>
+	 - **Description:** True if runoff block
+	 - **Type:** `string`
+ - <b id="#/properties/meta">meta</b>
+	 - **Description:** Any metadata for the object.  Most likely to use 'modified'
+	 - **Type:** `object`
+	 - <b id="httpsgithub.comdatalinker-orgicar-rezareicarobjectmetadata.md">Link to schema: https://github.com/Datalinker-Org/ICAR-Rezare/ICARObjectMetaData.md</b>
+
+_Generated with [json-schema-md-doc](https://brianwendt.github.io/json-schema-md-doc/)_
